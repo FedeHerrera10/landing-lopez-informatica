@@ -1,0 +1,36 @@
+---
+interface Props {
+    title:string,
+    content:string,
+    urlImg: string | ImageMetadata;
+    name:String
+    alt: string;
+}
+
+import type { ImageMetadata } from "astro";
+import { getImage } from "astro:assets";
+const { title,content,urlImg,name } = Astro.props;
+
+const img = await getImage({
+    src: urlImg,
+});
+
+---
+
+<article class="mt-10 py-8 bg-[url('../assets/cuadre.svg')] border rounded-md border-slate-600 max-w-xs  mx-auto relative  md:max-w-lg 
+    lg:max-w-xl xl:max-w-full shrink-0" 
+    >
+        <div class="flex flex-col justify-center items-center w-11/12 mx-auto z-20 text-center">
+        <h3 class="my-6 font-bold text-xl shadow-md text-slate-200 xl:text-2xl">{title}</h3>
+        <cite class="mb-6 text-slate-400 xl:text-lg">" {content} "</cite>
+        <picture class="mb-6 ">
+            <img src={img.src} alt='' class=' w-24  h-24 border rounded-full object-cover border-slate-500 '>
+        </picture>
+        <h4 class="text-slate-200 xl:text-lg">{name}</h4>
+        </div>
+        <div class="bg-gradient-to-b from-gray-900 via-blue-800 to-gray-700 absolute top-0 bottom-0 left-0 right-0 opacity-20 -z-10"></div>
+    </article>
+
+
+    
+    

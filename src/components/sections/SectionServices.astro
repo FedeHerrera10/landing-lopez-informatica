@@ -1,0 +1,45 @@
+---
+import ArticleService from '../ArticleService.astro';
+import Service1 from '../../assets/service1.jpg';
+import Service2 from '../../assets/service2.jpg';
+import Service3 from '../../assets/service3.jpg';
+import Service4 from '../../assets/service4.jpg';
+import {sectionServices} from '../../data';
+---
+
+<section class="text-slate-200 mt-20  " id="soluciones">
+    <h2 class="text-3xl font-extrabold text-center lg:text-4xl xl:text-5xl pt-20 md:pt-28">{sectionServices.title}</h2>
+    <p class="text-md my-10 text-slate-400 leading-relaxed	lg:text-lg 2xl:text-xl lg:my-14 lg:leading-loose">{sectionServices.description}</p>
+    <div class="flex flex-col justify-center items-center gap-8 lg:grid lg:grid-cols-2 grid-rows-[500px 600px] lg:gap-4 xl:gap-10 ">
+        
+        <ArticleService
+            title={sectionServices.services[0].title}
+            content={sectionServices.services[0].description}
+            urlImg={Service1}
+            alt='service1'
+        />
+        
+        <ArticleService
+            title={sectionServices.services[1].title}
+            content={sectionServices.services[1].description}
+            urlImg={Service2}
+            alt='service 2'
+        />
+        
+        <ArticleService
+            title={sectionServices.services[2].title}
+            content={sectionServices.services[2].description}
+            urlImg={Service3}
+            alt='service 3'
+            
+        />
+        
+        <ArticleService
+            title={sectionServices.services[3].title}
+            content={sectionServices.services[3].description}
+            urlImg={Service4}
+            alt='service 4'
+        />
+    </div>
+    <h3 class="mt-10 text-slate-400 leading-relaxed lg:text-lg lg:mt-20 lg:leading-loose 2xl:text-xl  	">{sectionServices.footer}</h3>
+</section>

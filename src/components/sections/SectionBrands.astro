@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets';
+import Amd from '../../assets/iconos/amd.png';
+import Nvidia from '../../assets/iconos/nvidia.png';
+import Intel from '../../assets/iconos/intel.png';
+import Asus from '../../assets/iconos/asus.png';
+import Dell from  '../../assets/iconos/dell.png';
+import Hp from '../../assets/iconos/hp.png';
+import Lenovo from '../../assets/iconos/lenovo.png';
+import Cisco from '../../assets/iconos/cisco.png';
+import  '../../assets/styles/slider.css';
+import {titleApp,brand} from '../../data'
+
+---
+
+
+</style>
+<section class="text-slate-200 mt-20 " >
+    <div class="mb-20">
+        <h2 class="text-3xl font-extrabold text-center lg:text-4xl xl:text-5xl ">{brand.title}</h2>
+    <p class="text-md my-10 text-slate-400  lg:text-lg 2xl:text-xl lg:my-10">En <span class=" font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 inline-block text-transparent bg-clip-text">
+       {titleApp} </span> 
+        {brand.description}
+    </p>
+    </div>
+    <div class="logos group relative overflow-hidden whitespace-nowrap py-10 [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]
+    max-w-3xl mx-auto
+    ">
+    <div class="animate-slide-left inline-block w-max ">
+        <Image src={Amd}     class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Nvidia}  class="w-16 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Hp}      class="w-16 h-12 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Asus}    class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Dell}    class="w-16 h-12 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Intel}   class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Lenovo}  class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Cisco}   class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        
+    </div> 
+    <div class="animate-slide-left inline-block w-max ">
+        <Image src={Amd}     class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Nvidia}  class="w-16 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Hp}      class="w-16 h-12 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Asus}    class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Dell}    class="w-16 h-12 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Intel}   class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Lenovo}  class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        <Image src={Cisco}   class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
+        
+    </div> 
+</div>
+</section>
+
+
+<!-- #E4E5E7 -->

@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import HeaderAbout from '../components/HeaderAbout.astro';
+import Footer from '../components/Footer.astro';
+import SectionMisionVision from '../components/sections/SectionMisionVision.astro';
+import SectionFounder from '../components/sections/SectionFounder.astro';
+import Contact from '../components/Contact.astro';
+---
+
+<Layout title="Lopez Informatica">
+    <HeaderAbout/>
+    <main class="w-11/12 mx-auto text-slate-200 my-10 max-w-md   md:max-w-2xl lg:max-w-full lg:w-11/12 xl:max-w-7xl ">
+      <SectionMisionVision/>
+      <SectionFounder/>
+      <Contact/>
+    </main>
+	<Footer/> 
+</Layout>
+
