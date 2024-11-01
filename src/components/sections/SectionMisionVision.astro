@@ -5,16 +5,14 @@ import ImgAboutVision from '../../assets/about-vision.jpg';
 import {titleApp,mision,vision} from '../../data.js'
 import SectionBase from './SectionBase.astro';
 ---
-<SectionBase id="mision-vision">
+<section id="mision-vision" class="text-slate-200 lg:mt-24  scroll-mt-24">
     <div class="flex flex-col ">
-        
         <div class="lg:flex lg:gap-5">
             <div class="mb-8 lg:mb-0 lg:w-3/5 ">
                 <h2 class="text-3xl font-extrabold  lg:text-4xl xl:text-5xl t-left">Mision</h2>
                 <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed t-left">
                     En
                     <span class=" font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 inline-block text-transparent bg-clip-text">{titleApp} </span>
-                    
                     {mision.description}
                 </p>
                 <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed t-left">{mision.description2}</p>
@@ -37,4 +35,4 @@ import SectionBase from './SectionBase.astro';
         </div>
         
     </div>
-</SectionBase>
+</section>
