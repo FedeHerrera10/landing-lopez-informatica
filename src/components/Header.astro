@@ -1,6 +1,6 @@
 ---
 import { Image } from 'astro:assets';
-import Hero from '../assets/hero.jpg';
+import Hero from '../assets/hero.webp';
 import {header} from '../data';
 import Nav from './Nav.astro';
 
@@ -20,7 +20,8 @@ import Nav from './Nav.astro';
        </div>
        
        <div class="mt-14 mx-auto  p-1 bg-blue-950 rounded-lg  w-11/12  shadow-[-3px_3px_100px_-11px_#228be6]  lg:w-1/2 lg:mt-32 hero">
-           <Image src={Hero} alt='hero-image' class='w-full rounded-lg h-[500px] lg:h-[600px] xl:h-[650px] object-cover'  />
+           <Image src={Hero}  alt='hero-image' loading='eager' class='w-full rounded-lg h-[300]  lg:h-[600px] xl:h-[650px] object-cover '  />
+           
        </div>
    </div>
 </header>
