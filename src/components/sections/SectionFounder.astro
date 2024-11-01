@@ -5,32 +5,26 @@ import {owner,about_owner} from '../../data.js';
 import SectionBase from './SectionBase.astro';
 ---
 <SectionBase  id="founder">
-    
-    
-    <div class="flex flex-col lg:flex-row justify-between place-items-center gap-20 lg:gap-10 ">
-        
-        <div class="flex flex-col w-full lg:lg:w-2/5 t-left">
-            <div class=" rounded-2xl mt-10 relative inline lg:max-w-lg
-             after:bg-gradient-to-b after:from-blue-900  after:to-blue-950
+    <div class="flex flex-col lg:flex-row justify-between place-items-center gap-20 lg:gap-10 lg:my-40  ">
+        <div class="w-full lg:w-3/5">
+            <h2 class="text-3xl font-extrabold  lg:text-4xl xl:text-5xl t-left">Sobre nuestro fundador</h2>
+               <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  hero">
+                <span class=" font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 inline-block text-transparent bg-clip-text">
+                    {owner}
+                </span>  {about_owner.description}
+               </p>
+               <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  hero">
+                   {about_owner.description2}
+               </p>
+           </div>
+        <div class="flex flex-col w-full lg:w-2/5 hero  rounded-3xl">
+            <div class=" rounded-3xl mt-10 relative inline lg:max-w-lg shadow-lg shadow-slate-800
+             after:bg-gradient-to-b after:from-[#16181d]  after:to-blue-950
             after:rounded-2xl  after:-z-10 after:opacity-80  after:absolute after:top-10 after:bottom-0 after:left-0 after:right-0
             ">
                <Image src={ImgFounder} alt='img-founde' class="rounded-2xl grayscale relative w-full h-80 object-fill md:h-[400px] lg:h-96"/>
             </div>
             
        </div>
-
-       <div class="w-full lg:w-3/5">
-        <h2 class="text-3xl font-extrabold  lg:text-4xl xl:text-5xl hero">Sobre nuestro fundador</h2>
-           <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  hero">
-            <span class=" font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 inline-block text-transparent bg-clip-text">
-                {owner}
-            </span>  {about_owner.description}
-           </p>
-           <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  hero">
-               {about_owner.description2}
-           </p>
-       </div>
-
-
     </div>
 </SectionBase>
