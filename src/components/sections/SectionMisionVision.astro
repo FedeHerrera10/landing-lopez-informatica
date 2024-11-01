@@ -3,37 +3,38 @@ import { Image } from 'astro:assets';
 import ImgAboutMision from '../../assets/about-mision.jpg';
 import ImgAboutVision from '../../assets/about-vision.jpg';
 import {titleApp,mision,vision} from '../../data.js'
+import SectionBase from './SectionBase.astro';
 ---
-<section class="text-slate-200 " id="mision-vision">
+<SectionBase id="mision-vision">
     <div class="flex flex-col ">
         
         <div class="lg:flex lg:gap-5">
             <div class="mb-8 lg:mb-0 lg:w-3/5 ">
-                <h2 class="text-3xl font-extrabold  lg:text-4xl xl:text-5xl ">Mision</h2>
-                <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed">
+                <h2 class="text-3xl font-extrabold  lg:text-4xl xl:text-5xl t-left">Mision</h2>
+                <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed t-left">
                     En
                     <span class=" font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 inline-block text-transparent bg-clip-text">{titleApp} </span>
                     
                     {mision.description}
                 </p>
-                <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed">{mision.description2}</p>
-                <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed">{mision.description3}</p>
+                <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed t-left">{mision.description2}</p>
+                <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed t-left">{mision.description3}</p>
             </div>
-            <Image src={ImgAboutMision} alt="img-about-mision" class="lg:w-2/5 object-cover rounded-lg opacity-70 shadow-lg shadow-slate-800"/>
+            <Image src={ImgAboutMision} alt="img-about-mision" class="lg:w-2/5 object-cover rounded-lg opacity-70 shadow-lg shadow-slate-800 hero"/>
         </div>
         
         <div class="mt-20 lg:flex lg:flex-row-reverse lg:gap-8 lg:mt-28">
             <div class="mb-8 lg:mb-0 lg:w-3/5">
-                <h2 class="text-3xl font-extrabold  lg:text-4xl xl:text-5xl ">Vision</h2>
-                <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed">
+                <h2 class="text-3xl font-extrabold  lg:text-4xl xl:text-5xl hero">Vision</h2>
+                <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed hero">
                     {vision.description}
                 </p>
-                <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed">
+                <p class="text-md mt-5 text-slate-400  leading-relaxed	lg:text-lg 2xl:text-xl  lg:leading-relaxed hero">
                     {vision.description2}
                 </p>
             </div>
-            <Image src={ImgAboutVision} alt="img-about-mision" class="lg:w-2/5 rounded-lg opacity-70 shadow-lg shadow-slate-800"/>
+            <Image src={ImgAboutVision} alt="img-about-mision" class="lg:w-2/5 rounded-lg opacity-70 shadow-lg t-left shadow-slate-800"/>
         </div>
         
     </div>
-</section>
+</SectionBase>

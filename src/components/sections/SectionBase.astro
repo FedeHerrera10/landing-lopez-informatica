@@ -1,0 +1,9 @@
+---
+interface Props {
+    id:string,
+}
+const {id} = Astro.props;
+---
+<section class="text-slate-200 mt-24  scroll-mt-24"  id={id}>
+    <slot/>
+</section>

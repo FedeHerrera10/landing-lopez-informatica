@@ -17,6 +17,7 @@
     "embla-carousel": "^8.3.0",
     "embla-carousel-auto-scroll": "^8.3.0",
     "embla-carousel-autoplay": "^8.3.0",
+    "scrollreveal": "^4.0.9",
     "tailwindcss": "^3.4.13",
     "wowjs": "^1.1.3"
   }

@@ -10,21 +10,19 @@ import Lenovo from '../../assets/iconos/lenovo.png';
 import Cisco from '../../assets/iconos/cisco.png';
 import  '../../assets/styles/slider.css';
 import {titleApp,brand} from '../../data'
+import SectionBase from './SectionBase.astro';
 
 ---
-
-
-</style>
-<section class="text-slate-200 mt-20 " >
-    <div class="mb-20">
-        <h2 class="text-3xl font-extrabold text-center lg:text-4xl xl:text-5xl ">{brand.title}</h2>
-    <p class="text-md my-10 text-slate-400  lg:text-lg 2xl:text-xl lg:my-10">En <span class=" font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 inline-block text-transparent bg-clip-text">
+<SectionBase id="brands" >
+    <div class="mb-20 ">
+        <h2 class="text-3xl font-extrabold text-center lg:text-4xl xl:text-5xl animation-top">{brand.title}</h2>
+    <p class="text-md my-10 text-slate-400  lg:text-lg 2xl:text-xl lg:my-10 animation-top">En <span class=" font-bold bg-gradient-to-r from-blue-700 via-blue-600 to-blue-500 inline-block text-transparent bg-clip-text">
        {titleApp} </span> 
         {brand.description}
     </p>
     </div>
     <div class="logos group relative overflow-hidden whitespace-nowrap py-10 [mask-image:_linear-gradient(to_right,_transparent_0,_white_128px,white_calc(100%-128px),_transparent_100%)]
-    max-w-3xl mx-auto
+    max-w-3xl mx-auto animation-top
     ">
     <div class="animate-slide-left inline-block w-max ">
         <Image src={Amd}     class="w-20 h-16 grayscale hover:filter-none mx-4 inline  cursor-pointer flex-shrink-0" alt='icon-amd'/>
@@ -49,7 +47,4 @@ import {titleApp,brand} from '../../data'
         
     </div> 
 </div>
-</section>
-
-
-<!-- #E4E5E7 -->
+</SectionBase>
