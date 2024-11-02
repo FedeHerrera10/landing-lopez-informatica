@@ -31,7 +31,7 @@ export const sectionServices = {
 
 export const about = {
     title:"Sobre Nosotros",
-    description:"es una empresa riojana  creada por Lopez Maximiliano ,Tecnico en Telecomunicaciones. Nuestra empresa esta comprometida con brindar soluciones tecnológicas integrales para particulares y empresas. Con años de experiencia en el sector, nos especializamos en la reparación de equipos, instalación de sistemas operativos, configuración de redes y montaje de cámaras de seguridad. "
+    description:", Tecnico en Telecomunicaciones. Nuestra empresa esta comprometida con brindar soluciones tecnológicas integrales para particulares y empresas. Con años de experiencia en el sector, nos especializamos en la reparación de equipos, instalación de sistemas operativos, configuración de redes y montaje de cámaras de seguridad. "
 }
 
 export const clients = {
